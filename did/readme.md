@@ -66,32 +66,5 @@ https://uniresolver.io/
 Create a few example DIDs.
 
 
-
-
-
-
-Trusted Sharing
-
-https://github.com/rafaelppires/trusted-sharing
-
-https://github.com/rafaelppires/trusted-sharing/tree/master/sgx_grpshr
-
-everything by 
-
-https://gitlab.securecloud.works/rafael.pires
-
-
-Initial question that lead to research for IBBE-SGX
-http://conferences.inf.ed.ac.uk/EuroDW2018/papers/eurodw18-Contiu.pdf
-
-IBBE-SGX research paper
-https://arxiv.org/pdf/1805.01563.pdf
-
-Intel SGX briefing
-https://software.intel.com/sites/default/files/managed/c3/8b/intel-sgx-product-brief-2019.pdf
-
-Prototype on Azure?
-https://azure.microsoft.com/en-us/blog/protect-data-in-use-with-the-public-preview-of-azure-confidential-computing/
-
-
 ## 2. IPDB DID resolver (WIP)
+The official IPDB DID resolver will be published soon. 
