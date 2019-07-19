@@ -6,8 +6,8 @@ Email [julian@riddleandcode.com](mailto:julian@riddleandcode.com) if you have an
 
 The following focus groups were active during the workshop:
 
-* [Introduction to DID, IPDB method definition & IPDB DID resolver integration](https://github.com/RiddleAndCode/DecentralizedIDsWorkshop/tree/master/did)
-* [DID & TLS: Authentication and secure communication between parties based on TLS in combination with DIDs](https://github.com/RiddleAndCode/DecentralizedIDsWorkshop/blob/master/tls/resources.md)
+* [Introduction to DID, IPDB method definition & IPDB DID resolver integration](https://github.com/RiddleAndCode/DecentralizedIDsWorkshop/tree/master/did-ipdb)
+* [DID & TLS: Authentication and secure communication between parties based on TLS in combination with DIDs](https://github.com/RiddleAndCode/DecentralizedIDsWorkshop/blob/master/tls-with-dids/resources.md)
 * [Exploring Cryptographic Group Access Control and Authentification with SGX](https://github.com/RiddleAndCode/DecentralizedIDsWorkshop/tree/master/CryptoAccessControl)
 * [Machine Identities & DIDs: Connecting Machine Identities, IPDB and zenroom based smart contracting with the help of DIDs](https://github.com/RiddleAndCode/DecentralizedIDsWorkshop/tree/master/MachineIDs_DIDs)
 
