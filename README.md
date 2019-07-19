@@ -11,5 +11,6 @@ The following focus groups were active during the workshop:
 * [Exploring Cryptographic Group Access Control and Authentification with SGX](https://github.com/RiddleAndCode/DecentralizedIDsWorkshop/tree/master/CryptoAccessControl)
 * [Machine Identities & DIDs: Connecting Machine Identities, IPDB and zenroom based smart contracting with the help of DIDs](https://github.com/RiddleAndCode/DecentralizedIDsWorkshop/tree/master/MachineIDs_DIDs)
 
+Please follow the links to add documentation or to read the current state of the projects. We are looking forward to further collaboration on these topics that go beyond the scope of the workshop.
 
 
