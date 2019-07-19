@@ -28,38 +28,40 @@ the following API
 https://ipdb2.riddleandcode.com/api/v1/transactions/
 
 by e.g. calling  https://ipdb2.riddleandcode.com/api/v1/transactions/bc1dcd0fb64d4df9b5168461306ecaf11d82a91e5c347faf6f54f556d7c7200c
-DID Method Spec
-We need to discuss and specify the following:
 
-What is the DID Method name? e.g. did:ipdb:xxxxx or did:bigch:xxxxx, etc?
-Do we want/need to support "sub-namespaces", e.g. did:ipdb:main:xxxxx or did:ipdb:test:xxxxx or did:ipdb:mynet:xxxxx or ...
-What is the format of the method-specific identifier (the xxxxx above)?
-It must be unique
-It must be persistent (not change)
-It must somehow point to the DID Document
-Could be a BigchainDB transaction ID? Or an asset ID?
+
+## DID Method Specs
+
+The following got drafted and will be pushed finished soon:
 
 did:ipdb:<optional:namespace>:b5340f8955456ad918334c305232452a36da3bd199eab6211891160e8f2c0d69
 
+
+
+
 Define the standard DID operations
-Create
-generate key pair
-create asset by sending a "create" transaction
-asset: {}
-metadata: { *services* , optional: *keys* }
-Read/Resolve: the optional namespace should contain an identifier being listed at IPDB. 
-the method specific identifier represents the asset id of the DID asset upon IPDB. It can be looked up by requesting the content of https://<namespace or default service>/api/v1/assets?search=<method specific identifier
-DID Document: "id": "<method specific identifier"
-DID Document: "services": <services from metadata object>
-DID Document: "publicKeys": <publicKeys from metadata object> OR public key is taken from the IPDB transaction creator (this is the public key of the input (the signer))
-Update
-The owner transfers the asset (DID document) to itself with the new metadata (DID document).
-Public key can be changed by transferring the DID document (the asset) to a new public key. 
-Deactivate
-Transfer the asset to a well-known hardcoded burn address 00000000000000000000000000000000000000000000 (45 times 0)
-Further Steps
+* Create
+  * generate key pair
+  * create asset by sending a "create" transaction
+    * asset: {}
+    * metadata: { *services* , optional: *keys* }
+* Read/Resolve 
+  * the optional namespace should contain an identifier being listed at IPDB. 
+  * the method specific identifier represents the asset id of the DID asset upon IPDB. It can be looked up by requesting the content of https://<namespace or default service>/api/v1/assets?search=<method specific identifier
+    * DID Document: "id": "<method specific identifier"
+    * DID Document: "services": <services from metadata object>
+    * DID Document: "publicKeys": <publicKeys from metadata object> OR public key is taken from the IPDB transaction creator (this is the public key of the input (the signer))
+* "Update"
+  * the owner transfers the asset (DID document) to itself with the new metadata (DID document).
+  * Public key can be changed by transferring the DID document (the asset) to a new public key. 
+* "Deactivate"
+  * Transfer the asset to a well-known hardcoded burn address 00000000000000000000000000000000000000000000 (45 times 0)
+
+
+### Further Steps
 Register DID Method Spec here:
 https://w3c-ccg.github.io/did-method-registry/
+
 Maybe write a driver for the Universal Resolver:
 https://uniresolver.io/
 
