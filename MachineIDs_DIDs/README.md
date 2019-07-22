@@ -47,9 +47,6 @@ The used primitives are listed below:
 5. Test your Dev System
 
     Run the script [create_transaction.py](./create_transaction.py) with ```python3 create_transaction.py```. If it does not throw an error you are ready to go. 
-    
-
-    (Sample output with some explanations to be added.)
 
 ## Interation with Secure Element on Raspberry Pi
 
