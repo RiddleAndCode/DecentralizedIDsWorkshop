@@ -26,10 +26,10 @@ The used primitives are listed below:
     * Press ESC - ```wq!``` - Enter
     * Restart all docker containers with ```make restart```
 
-3. Install lua 
+3. Install swig 
 * On Linux with whatever package manager.
-* On MacOS preferably with brew
-```brew install lua````
+* On MacOS with brew
+```brew install swig```
 
 4. Install zenroom
 * On Linux install via ```pip3 install zenroom```
@@ -37,12 +37,13 @@ The used primitives are listed below:
     ````
     git clone https://github.com/DECODEproject/Zenroom.git
     cd Zenroom
+    git fetch && git fetch -—tags
+    git checkout v0.9-build1 
+    git submodule update --init --recursive
     make embed-lua
     make osx-python3
     ````
-    Copy ```zenroom.so``` to your Python application directory
-
-    Remark: as of July 22nd the Python bindings are broken, @nestorsilk promised to fix it.
+    Copy ```_zenroom.so``` to your Python application directory.
 
 5. Test your Dev System
 
